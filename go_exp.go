@@ -18,6 +18,6 @@ func main() {
 	fmt.Println("z:", z)
 
 	//Multiple variables are assigned in single line- i with an integer and j with a string
-	var i, j = 52, "hello"
+	var i, j = 68, "hello"
 	fmt.Println("i and j:", i, j)
 }
