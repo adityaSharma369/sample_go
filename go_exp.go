@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	
+	fmt.Println("commiting")
 	//declaring a integer variable x
 	var x int
 	x = 4                //assigning x the value 3
