@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	
-	fmt.Println("commiting")
+
+	fmt.Println("test jenkins")
 	//declaring a integer variable x
 	var x int
 	x = 4                //assigning x the value 3
@@ -16,7 +16,7 @@ func main() {
 
 	//declaring a variable z with value 50 and prints it
 	//Here type int is not explicitly mentioned
-	var z = 29
+	var z = 51
 	fmt.Println("z:", z)
 
 	//Multiple variables are assigned in single line- i with an integer and j with a string
