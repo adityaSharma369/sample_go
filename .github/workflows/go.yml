@@ -40,10 +40,10 @@ jobs:
 
     - name: run
       run:  go run \
-             -ldflags "-X main.version={version} -X main.build=12082019" \
+            -ldflags "-X main.version={version}" \
             go_exp.go
     - name: build
       run: go build -o mybinary \
-              -ldflags "-X main.version={version} -X 'main.build=$(date)'" \ 
+           -ldflags "-X main.version={version}" \ 
            go_exp.go
 
