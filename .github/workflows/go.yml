@@ -32,3 +32,11 @@ jobs:
 
     - name: Build
       run: go build -v .
+    - name: Bump version and push tag
+      uses: TriPSs/conventional-changelog-action@v1.3.0
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN_ACTION }}
+        git-message: 'chore(release): {version}'
+        preset: 'angular'
+        tag-prefix: ''
+        output-file: 'CHANGELOG.md'
