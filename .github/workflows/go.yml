@@ -29,9 +29,6 @@ jobs:
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             dep ensure
         fi
-
-    - name: Build
-      run: go build -v .
     - name: Bump version and push tag
       uses: TriPSs/conventional-changelog-action@v1.3.0
       with:
@@ -40,3 +37,13 @@ jobs:
         preset: 'angular'
         tag-prefix: ''
         output-file: 'CHANGELOG.md'
+
+    - name: run
+      run:  go run \
+             -ldflags "-X main.version={version} -X main.build=12082019" \
+            go_exp.go
+    - name: build
+      run: go build -o mybinary \
+              -ldflags "-X main.version={version} -X 'main.build=$(date)'" \ 
+           go_exp.go
+
