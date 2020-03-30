@@ -3,7 +3,12 @@ package main
 import "fmt"
 
 func main() {
+	var (
+    		version string
+   	        
+	    )
 
+	fmt.Println("version=", version)
 	fmt.Println("its jenkins world")
 	//declaring a integer variable x
 	var x int
