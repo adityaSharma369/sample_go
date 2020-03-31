@@ -14,7 +14,7 @@ func main() {
   }
     version := os.Getenv("INPUT_VERSION")
     fmt.Println("version----",version)
-	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version+"' go_exp.go\"")
+	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version+"'\" go_exp.go")
 	cmd.Start()
 	fmt.Println(cmd)
 }
