@@ -5,7 +5,7 @@ import "os"
 import "fmt"
 
 func main() {
-    version := os.Getenv("Version")
+    version := os.Getenv("VERSION")
     fmt.Println("version----",version)
     app := "go"
     arg0 := "run"
