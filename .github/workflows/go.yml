@@ -40,4 +40,6 @@ jobs:
         changelog-release-count: 5
     - name: build
       run: go build -ldflags="-X 'main.Version={version}'"
+      env:
+        version: TriPSs/conventional-changelog-action@v1.3.0
 
