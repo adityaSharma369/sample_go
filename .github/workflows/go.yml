@@ -37,15 +37,16 @@ jobs:
         preset: 'angular'
         tag-prefix: ''
         output-file: 'CHANGELOG.md'
+        changelog-release-count: 5
 
-    - name: run
-      run:  go run \
-    - name: next step
-      run: -ldflags "-X main.version={version}" \
-    - name: name of the code  
-      run: go_exp.go
-    - name: build
-      run: go build -o mybinary \
-           -ldflags "-X main.version={version}" \ 
-           go_exp.go
+#     - name: run
+#       run:  go run \
+#     - name: next step
+#       run: -ldflags "-X main.version={version}" \
+#     - name: name of the code  
+#       run: go_exp.go
+#     - name: build
+#       run: go build -o mybinary \
+#            -ldflags "-X main.version={version}" \ 
+#            go_exp.go
 
