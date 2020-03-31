@@ -4,7 +4,7 @@ import "os/exec"
 import "os"
 
 func main() {
-    version = os.Getenv("Version")
+    version := os.Getenv("Version")
     app := "go"
     arg0 := "run"
     arg1 := "-ldflags"
