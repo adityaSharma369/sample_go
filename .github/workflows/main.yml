@@ -35,11 +35,6 @@ jobs:
       uses: TriPSs/conventional-changelog-action@v1.3.0
       with:
         github-token: ${{ secrets.GITHUB_TOKEN_ACTION }}
-        git-message: 'chore(release): {version}'
-        preset: 'angular'
-        tag-prefix: ''
-        output-file: 'CHANGELOG.md'
-        changelog-release-count: 5
 #     - name: build
 #       run: go build -ldflags="-X 'main.Version={version}'"
 #     - name: set version
