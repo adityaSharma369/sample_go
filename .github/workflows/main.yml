@@ -38,7 +38,7 @@ jobs:
         tag-prefix: ''
         output-file: 'CHANGELOG.md'
         changelog-release-count: 5
-    - name: build
-      run: go build -ldflags="-X 'main.Version={version}'"
+#     - name: build
+#       run: go build -ldflags="-X 'main.Version={version}'"
     - name: sh Script
       run: sh version.sh
