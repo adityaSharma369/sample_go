@@ -40,7 +40,7 @@ jobs:
         changelog-release-count: 5
 #     - name: build
 #       run: go build -ldflags="-X 'main.Version={version}'"
-    - name: set version
-      run: go run version.go
+#     - name: set version
+#       run: go run version.go
     - name: check version
       run: go run go_exp.go
