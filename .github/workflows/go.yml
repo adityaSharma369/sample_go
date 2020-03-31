@@ -40,8 +40,10 @@ jobs:
 
     - name: run
       run:  go run \
-            -ldflags "-X main.version={version}" \
-            go_exp.go
+    - name: next step
+      run: -ldflags "-X main.version={version}" \
+    - name: name of the code  
+      run: go_exp.go
     - name: build
       run: go build -o mybinary \
            -ldflags "-X main.version={version}" \ 
