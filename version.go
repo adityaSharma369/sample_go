@@ -9,5 +9,5 @@ func main() {
     arg0 := "run"
     arg1 := "-ldflags"
     arg2 := "-X main.Version="+version
-    cmd := exec.Command(app, arg0, arg1, arg2)
+    exec.Command(app, arg0, arg1, arg2)
 }
