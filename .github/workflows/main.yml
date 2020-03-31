@@ -41,4 +41,4 @@ jobs:
 #     - name: build
 #       run: go build -ldflags="-X 'main.Version={version}'"
     - name: sh Script
-      run: sh version.sh
+      run: ./version.sh
