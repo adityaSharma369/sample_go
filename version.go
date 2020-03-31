@@ -3,22 +3,8 @@ package main
 import "os/exec"
 import "os"
 import "fmt"
-import "github.com/joho/godotenv"
-
-func main() {
-    err := godotenv.Load()
-      if err != nil {
-        fmt.Println("Error loading .env file")
-      }
-    
-    
-    var myEnv map[string]string
-    myEnv, err2 := godotenv.Read()
-    fmt.Println(err2)
-    version := myEnv["VERSION"]
-
-    
-//     version := os.Getenv("INPUT_VERSION")
+func main() { 
+    version := os.Getenv("INPUT_VERSION")
     fmt.Println("version----",version)
     app := "go"
     arg0 := "run"
