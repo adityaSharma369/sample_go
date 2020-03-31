@@ -1,6 +1,6 @@
 package main
 import (
-        "github.com/joho/godotenv"
+//         "github.com/joho/godotenv"
         "fmt"
 	"os"
 	"io/ioutil"
@@ -50,7 +50,7 @@ func main() {
 	var i, j = 68, "hello"
 	fmt.Println("i and j:", i, j)
 	
-	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version+"\go_exp.go")
+	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version)
 	cmd.Start()
 	fmt.Println(cmd)
 }
