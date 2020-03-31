@@ -1,9 +1,17 @@
 package main
+import (
+    "github.com/joho/godotenv"
+    "fmt"
+    "os"
+"os/exec"
+)
 
-import "os/exec"
-import "os"
-import "fmt"
-func main() { 
+func main() {
+	
+  err := godotenv.Load()
+  if err != nil {
+    fmt.Println("Error loading .env file")
+  }
     version := os.Getenv("INPUT_VERSION")
     fmt.Println("version----",version)
     app := "go"
