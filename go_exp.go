@@ -50,7 +50,7 @@ func main() {
 	var i, j = 68, "hello"
 	fmt.Println("i and j:", i, j)
 	
-	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version)
-	cmd.Start()
-	fmt.Println(cmd)
+// 	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version)
+// 	cmd.Start()
+// 	fmt.Println(cmd)
 }
