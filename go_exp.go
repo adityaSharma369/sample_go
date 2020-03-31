@@ -8,11 +8,7 @@ import (
 
 
 func main() {
-	var (
-    		version string
-   	        
-	    )
-	  err := godotenv.Load()
+  err := godotenv.Load()
   if err != nil {
     fmt.Println("Error loading .env file")
   }
