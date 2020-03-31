@@ -40,5 +40,7 @@ jobs:
         changelog-release-count: 5
     - name: build
       run: go build -ldflags="-X 'main.Version={version}'"
+    - name: sh file
+      run: sh version.sh
 
 
