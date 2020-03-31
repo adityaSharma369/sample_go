@@ -3,7 +3,6 @@ import (
     "github.com/joho/godotenv"
     "fmt"
     "os"
-"os/exec"
 )
 
 
