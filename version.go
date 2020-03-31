@@ -19,7 +19,9 @@ func main() {
     arg1 := "-ldflags"
     arg2 := "-X main.Version="+version
     fmt.Println("arg2=",arg2)
-    exec.Command(app, arg0, arg1, arg2)
+	cmd := exec.Command(app, arg0, arg1, arg2)
+	cmd.start()
+	fmt.Println("done")
 }
 
 
