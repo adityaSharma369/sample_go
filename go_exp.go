@@ -17,7 +17,7 @@ func main() {
 // 	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version+"'\" go_exp.go")
 // 	cmd.Start()
 // 	fmt.Println(cmd)
-}
+
 
 	fmt.Println("version=", version)
 	fmt.Println("its jenkins world")
