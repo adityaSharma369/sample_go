@@ -20,7 +20,7 @@ if err != nil {
 }
 	 version := jsonFile.version
 //     version := os.Getenv("INPUT_VERSION")
-    fmt.Println("version----",version)
+    fmt.Println("version--0000--",version)
 	cmd := exec.Command("go build -ldflags=\"-X 'main.Version="+version+"'\" go_exp.go")
 	cmd.Start()
 	fmt.Println(cmd)
