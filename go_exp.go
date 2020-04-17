@@ -32,7 +32,6 @@ func main() {
 // 	fmt.Println(version)
 	fmt.Println("version=", version)
 	fmt.Println("its jenkins world")
-	fmt.Println("its jenkins world")
 	
 	//declaring a integer variable x
 	var x int
