@@ -46,6 +46,7 @@ func main() {
 	//Here type int is not explicitly mentioned
 	var z = 51
 	fmt.Println("z:", z)
+	fmt.Println("hi hello guys")
 
 	//Multiple variables are assigned in single line- i with an integer and j with a string
 	var i, j = 68, "hello"
