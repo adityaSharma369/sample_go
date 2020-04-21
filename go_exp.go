@@ -39,7 +39,7 @@ func main() {
 	fmt.Println("x:", x) //prints 3
 
 	//declaring a integer variable y with value 20 in a single statement and prints it
-	var y int = 80
+	var y int = 12
 	fmt.Println("y:", y)
 
 	//declaring a variable z with value 50 and prints it
